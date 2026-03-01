@@ -23,6 +23,6 @@ public class Cwork1 {
             System.out.println(arr[i]);
         }
 
-        input.close(); // good practice
+        input.close(); 
     }
 }
