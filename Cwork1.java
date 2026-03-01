@@ -1,26 +1,28 @@
 import java.util.*;
 
-class Cwork1 {
+public class Cwork1 {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        ArrayList<Integer> arr = new ArrayList<Integer>();
+        System.out.print("Enter array size: ");
+        int x = input.nextInt();
 
-        System.out.print("Enter Size Of Array: ");
-        int s = sc.nextInt();
+        int[] arr = new int[x];
 
-        System.out.println("Enter elements of Array:");
+        System.out.println("Enter array elements:");
 
-        for (int i = 0; i < s; i++) {
-            int num = sc.nextInt();
-            arr.add(num);
+        for (int i = 0; i < x; i++) {
+            arr[i] = input.nextInt();
         }
 
-        System.out.println("ArrayList is:");
-        System.out.println(arr);
+        System.out.println("Array elements are:");
 
-        sc.close();  
+        for (int i = 0; i < x; i++) {
+            System.out.println(arr[i]);
+        }
+
+        input.close(); // good practice
     }
 }
